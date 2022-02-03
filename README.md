@@ -1,5 +1,5 @@
 # Login-API
-Clone
-cd server
-npm i
-npm start
+Clone <br />
+cd server <br />
+npm i <br />
+npm start <br />
