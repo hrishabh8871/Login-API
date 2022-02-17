@@ -14,6 +14,9 @@ async function ValidMobileStep1(req, res) {
             return 0
         }
 
+        //For Info level
+        logger.info(mobile)
+
         if (!name) {
             res.status(401).send({
                 success: false,
@@ -50,7 +53,7 @@ async function ValidMobileStep1(req, res) {
 
     }
     catch (error) {
-        console.log(error)
+        logger.error(error.message)
         res.status(500).send({
             success: false,
             message: 'Something Went Wrong!!!'
